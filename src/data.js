@@ -79,7 +79,7 @@ export const projects = [
   {
     title: 'API Flashcards — API & déploiement',
     description:
-      "API de révision (Node.js / Express) reprise en fin de BUT pour une mise en production complète : 41 tests automatisés (Vitest, Supertest), conteneurisation Docker avec healthcheck, et CI/CD GitHub Actions — les tests bloquent le déploiement s'ils échouent, sinon l'app est redéployée automatiquement sur un serveur Ubuntu auto-hébergé.",
+      "API de révision (Node.js / Express) avec mise en production complète : tests automatisés (Vitest, Supertest), conteneurisation Docker avec healthcheck, et CI/CD GitHub Actions et déployée automatiquement sur un serveur Ubuntu auto-hébergé.",
     tags: ['Node.js / Express', 'Docker', 'CI/CD', 'Vitest'],
     link: 'https://github.com/Nonosthecrack/API-Flashcards',
   },
