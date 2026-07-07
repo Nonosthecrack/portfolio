@@ -12,7 +12,11 @@ import { education } from '../data.js'
           <span v-if="step.badge" class="badge">· {{ step.badge }}</span>
         </p>
         <h3>{{ step.title }}</h3>
+        <p v-if="step.subtitle" class="subtitle">{{ step.subtitle }}</p>
         <p class="school">{{ step.school }}</p>
+        <div v-if="step.tags" class="tags">
+          <span v-for="tag in step.tags" :key="tag" class="tag">{{ tag }}</span>
+        </div>
       </li>
     </ol>
   </section>
@@ -50,8 +54,22 @@ h3 {
   margin-bottom: 0.15rem;
 }
 
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 0.15rem;
+}
+
 .school {
   color: var(--text-muted);
   font-size: 0.88rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
 }
 </style>

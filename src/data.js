@@ -76,6 +76,13 @@ export const projects = [
       "Administration d'un parc informatique complet et de ses utilisateurs",
     tags: ['AD / GPO', 'GLPI'],
   },
+  {
+    title: 'API Flashcards — API & déploiement',
+    description:
+      "API de révision (Node.js / Express) reprise en fin de BUT pour une mise en production complète : 41 tests automatisés (Vitest, Supertest), conteneurisation Docker avec healthcheck, et CI/CD GitHub Actions — les tests bloquent le déploiement s'ils échouent, sinon l'app est redéployée automatiquement sur un serveur Ubuntu auto-hébergé.",
+    tags: ['Node.js / Express', 'Docker', 'CI/CD', 'Vitest'],
+    link: 'https://github.com/Nonosthecrack/API-Flashcards',
+  },
 ]
 
 export const education = [
@@ -88,12 +95,15 @@ export const education = [
   {
     period: '2023 → 2026',
     title: 'BUT Informatique — parcours A',
+    subtitle: "Parcours réalisation d'applications : conception, développement, validation",
     school: 'IUT Grand Ouest Normandie, Caen / Ifs',
+    tags: ['C', 'Java', 'Modèle de base de données', 'Réseaux', 'DevOps'],
   },
   {
     period: '2020 → 2023',
     title: 'Bac STI2D',
     school: "Lycée Napoléon, L'Aigle",
+    tags: ['Programmation Arduino', 'Conception 3D', 'Ingénierie et développement durable'],
   },
 ]
 

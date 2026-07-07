@@ -8,7 +8,12 @@ import { projects, profile } from '../data.js'
       <h2 class="section-title">réalisations</h2>
       <div class="grid">
         <article v-for="project in projects" :key="project.title" class="card reveal">
-          <h3>{{ project.title }}</h3>
+          <h3>
+            <a v-if="project.link" :href="project.link" target="_blank" rel="noopener">
+              {{ project.title }} <span class="ext">↗</span>
+            </a>
+            <template v-else>{{ project.title }}</template>
+          </h3>
           <p>{{ project.description }}</p>
           <div class="tags">
             <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
@@ -49,6 +54,20 @@ h3 {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
+}
+
+h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: var(--accent);
+}
+
+.ext {
+  color: var(--accent);
+  font-size: 0.85em;
 }
 
 p {

@@ -29,7 +29,7 @@ import { profile, extras } from '../data.js'
       </div>
 
       <footer>
-        <p>© {{ new Date().getFullYear() }} Noa Férault — fait avec Vue.js</p>
+        <p>© {{ new Date().getFullYear() }} Noa Férault — made with Vue.js</p>
       </footer>
     </div>
   </section>

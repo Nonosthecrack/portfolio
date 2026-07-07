@@ -33,12 +33,20 @@ describe('Portfolio', () => {
   it('affiche les expériences', () => {
     expect(wrapper.text()).toContain('Mecachrome')
     expect(wrapper.text()).toContain('HME BRASS France')
-    expect(wrapper.text()).toContain('Ville de Rugles')
   })
 
-  it('affiche les 4 réalisations', () => {
+  it('affiche les réalisations', () => {
     expect(wrapper.text()).toContain('Migration Windows 10 → 11')
     expect(wrapper.text()).toContain('Segmentation réseau en VLAN')
+    expect(wrapper.text()).toContain('API Flashcards')
+    const repo = wrapper.find('a[href="https://github.com/Nonosthecrack/API-Flashcards"]')
+    expect(repo.exists()).toBe(true)
+  })
+
+  it('affiche la formation avec parcours et tags', () => {
+    expect(wrapper.text()).toContain("Parcours réalisation d'applications")
+    expect(wrapper.text()).toContain('Programmation Arduino')
+    expect(wrapper.text()).toContain('Modèle de base de données')
   })
 
   it('affiche le contact', () => {
