@@ -2,9 +2,9 @@
 
 export const profile = {
   name: 'Noa Férault',
-  tagline: 'administration systèmes · réseaux · cybersécurité',
+  tagline: 'administration systèmes · réseaux · cybersécurité - devops',
   intro:
-    "3ᵉ année de BUT Informatique, admis au mastère ERIS. Un an d'alternance chez Mecachrome derrière moi : AD, VLAN, virtualisation, migration de parc. Je cherche l'alternance qui suivra.",
+    "3ᵉ année de BUT Informatique, admis au mastère ERIS. Je suis à la recherhce d'une alternance pour la rentrée prochaine.",
   availability: 'disponible — alternance rentrée 2026',
   email: 'ferault.noa@gmail.com',
   phone: '06 10 82 02 99',
@@ -43,12 +43,6 @@ export const experiences = [
       "Développement d'une application interne (PowerShell, .NET Framework)",
     ],
   },
-  {
-    role: 'Agent technique polyvalent',
-    company: 'Ville de Rugles',
-    period: 'juil 2025',
-    points: ['Valorisation des espaces publics — terrain, équipe, service'],
-  },
 ]
 
 export const projects = [
@@ -56,7 +50,7 @@ export const projects = [
     title: 'Migration Windows 10 → 11',
     description:
       "Préparation, déploiement et accompagnement des utilisateurs sur l'ensemble du parc Mecachrome.",
-    tags: ['Windows 11', 'GLPI'],
+    tags: ['Windows 11'],
   },
   {
     title: 'Segmentation réseau en VLAN',
@@ -74,7 +68,13 @@ export const projects = [
     title: 'Durcissement cybersécurité',
     description:
       "Déploiement d'un gestionnaire de mots de passe et de politiques de sécurité.",
-    tags: ['Cybersécurité', 'AD / GPO'],
+    tags: ['Cybersécurité', 'Vaultwarden'],
+  },
+  {
+    title: 'Administration',
+    description:
+      "Administration d'un parc informatique complet et de ses utilisateurs",
+    tags: ['AD / GPO', 'GLPI'],
   },
 ]
 
@@ -104,7 +104,7 @@ export const skills = [
   },
   {
     category: 'reseaux+cyber/',
-    items: ['VLAN', 'Switching / routage', 'Politiques de sécurité', 'Gestion des mots de passe'],
+    items: ['VLAN', 'Switching / routage', 'Cisco', 'Aruba', 'Politiques de sécurité', 'Gestion des mots de passe'],
   },
   {
     category: 'devops/',
@@ -112,7 +112,7 @@ export const skills = [
   },
   {
     category: 'dev+data/',
-    items: ['PowerShell', 'Java · C · C# (bases)', 'Back-end · API REST', 'Base de données · SQL'],
+    items: ['PowerShell', 'Java · C · C# (bases)', 'Back-end · API REST', 'Base de données · SQL/NoSQL'],
   },
 ]
 
